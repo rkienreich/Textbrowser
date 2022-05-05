@@ -10,6 +10,12 @@ class Gui : public QWidget, private Ui::Gui
 
 public:
     explicit Gui(QWidget *parent = nullptr);
+private slots:
+    void goButton(); //from GUI-widget
+    void showResult(quint16 port, bool status); //from Scanner
+    void on_goButton_clicked();
 };
 
 #endif // GUI_H
+
+
